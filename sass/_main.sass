@@ -1,5 +1,42 @@
 .main
+	position: relative
 	padding-top: 65px
 	padding-bottom: 60px
 	background: #373737 url(../img/main/main-bg.jpg) center no-repeat
 	color: $text-color-light 
+	z-index: 2
+	// Затемнение фона главной картинки
+	&::before
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		display: block
+		width: 100%
+		height: 100%
+		background-color: rgba(0, 0, 0, 0.5)
+		z-index: 0
+	// Оформление главной картинки
+	&-img
+		position: relative
+		&::before
+			content: ''
+			position: absolute
+			z-index: -1
+			width: 390px
+			height: 390px
+			left: 50%
+			margin-left: -195px
+			border: 1px solid #ffffff
+			border-radius: 50%
+	// Заголовок
+	&-text
+		&__title
+			margin-bottom: 20px
+			font-size: 41px
+			font-weight: bold
+		&__subtitle
+			font-size: 28px
+			font-weight: 300
+
+
