@@ -342,10 +342,111 @@
         <!-- /.offer -->
     </section>
 
+    <section class="production">
+        <div class="container">
+            <div class="production-wrapper">
+                <div class="production-box">
+                    <div class="production-slider">
+                        <div class="production-slider__item">
+                            <img src="img/slider/slide-1.jpg" alt="">
+                        </div>
+                        <div class="production-slider__item">
+                            <img src="img/slider/slide-2.jpg" alt="">
+                        </div>
+                        <div class="production-slider__item">
+                            <img src="img/slider/slide-3.jpg" alt="">
+                        </div>
+                        <div class="production-slider__item">
+                            <img src="img/slider/slide-4.jpg" alt="">
+                        </div>
+                        <div class="production-slider__item">
+                            <img src="img/slider/slide-5.jpg" alt="">
+                        </div>
+                        <div class="production-slider__item">
+                            <img src="img/slider/slide-6.jpg" alt="">
+                        </div>
+                        <div class="production-slider__item">
+                            <img src="img/slider/slide-7.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="production-slider--mini">
+                        <div class="production-slider--mini__item">
+                            <img src="img/slider/slm1.jpg" alt="">
+                        </div>
+                        <div class="production-slider--mini__item">
+                            <img src="img/slider/slm2.jpg" alt="">
+                        </div>
+                        <div class="production-slider--mini__item">
+                            <img src="img/slider/slm3.jpg" alt="">
+                        </div>
+                        <div class="production-slider--mini__item">
+                            <img src="img/slider/slm4.jpg" alt="">
+                        </div>
+                        <div class="production-slider--mini__item">
+                            <img src="img/slider/slm5.jpg" alt="">
+                        </div>
+                        <div class="production-slider--mini__item">
+                            <img src="img/slider/slm6.jpg" alt="">
+                        </div>
+                        <div class="production-slider--mini__item">
+                            <img src="img/slider/slm7.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="production-text">
+                    <h2 class="production-text__title">Производство</h2>
+                    <p class="production-text__desc">Современное оборудование позволяет произ- водить до 5 миллионов квадратных метров гофрокартона ежемесячно. Гофрокороба и
+                    лотки производятся по ГОСТу или чертежам заказчика.
+                    </p>
+                    <p class="production-text__desc">Досконально прорабатываем конструкции коро- бов и составы сырья, учитывая условия хранения, транспортировки и
+                    производства вашей продукции.
+                    </p>
+                    <p class="production-text__desc">Возможно нанесение цветной флексопечати на поверхность коробов.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script>window.jQuery || document.write('<script src ="js/jquery-3.3.1.slim.min.js"><\/script>')</script> -->
+
+    <!-- Подключение слайдера fotorama -->
+    <!-- <link href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> -->
 
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script>window.jQuery || document.write('<script src ="js/jquery-3.3.1.slim.min.js"><\/script>')</script>
+    <!-- Подключаем стили slick slider -->
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+
+    <!-- Подключаем саму библиотеку slick slider -->
+    <script src="slick/slick.min.js"></script>
+
+    <!-- Инициализируем слайдер -->
+
+    <script>
+    $(document).ready(function(){
+        $('.production-slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            asNavFor: '.production-slider--mini'    
+        });
+
+        $('.production-slider--mini').slick({
+           slidesToShow: 3,
+            slidesToScroll: 1,
+            asNavFor: '.production-slider',
+            dots: true,
+            centerMode: true,
+            focusOnSelect: true            
+        });
+    });
+    </script>
+
 
     <script>
         $(document).ready(function(){

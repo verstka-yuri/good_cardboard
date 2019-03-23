@@ -438,4 +438,43 @@ input:focus, button:focus {
 .offer-wrap label {
   margin-bottom: 17px;
 }
+
+.production {
+  padding: 95px 0;
+}
+
+.production-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.production-slider {
+  width: 535px;
+}
+
+.production-slider--mini {
+  width: 535px;
+}
+
+.production-text {
+  width: 400px;
+}
+
+.production-text__title {
+  font-size: 28px;
+  font-weight: 400;
+  padding: 18px 30px;
+  color: #ffffff;
+  background: #fd9c28;
+}
+
+.production-text__desc {
+  font-size: 16px;
+  font-weight: 300;
+  padding-left: 25px;
+}
 /*# sourceMappingURL=style.css.map */
