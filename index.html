@@ -7,6 +7,8 @@
 
       <link rel="stylesheet" href="css/bootstrap-grid.min.css">
       <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&amp;subset=cyrillic" rel="stylesheet">
+      <!-- Подключение анимации -->
+      <link rel="stylesheet" href="css/animate.min.css">
 	  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -47,7 +49,7 @@
         <div class="container">
             <div class="row align-items-center">
                     <div class="col-5">
-                        <div class="main-img">
+                        <div class="main-img wow fadeInUp">
                             <img src="img/main/main-img.png" alt="Картон">
                         </div>
                     </div>
@@ -142,7 +144,7 @@
             <!-- /.numbers -->
 
             <div class="features-blocks">
-                <div class="features-block">
+                <div class="features-block wow fadeInUp" data-wow-delay="0.1s">
                     <div class="features-block__img">
                         <img src="img/features/icon-1.png" alt="Производство">
                     </div>
@@ -157,7 +159,7 @@
                 </div>
                 <!-- /.features-block -->
 
-                <div class="features-block">
+                <div class="features-block wow fadeInUp" data-wow-delay="0.2s">
                     <div class="features-block__img">
                         <img src="img/features/icon-2.png" alt="Бесплатные образцы">
                     </div>
@@ -172,7 +174,7 @@
                 </div>
                 <!-- /.features-block -->
 
-                <div class="features-block">
+                <div class="features-block wow fadeInUp" data-wow-delay="0.3s">
                     <div class="features-block__img">
                         <img src="img/features/icon-3.png" alt="Стабильное качество">
                     </div>
@@ -187,7 +189,7 @@
                 </div>
                 <!-- /.features-block -->
 
-                <div class="features-block">
+                <div class="features-block wow fadeInUp" data-wow-delay="0.4s">
                     <div class="features-block__img">
                         <img src="img/features/icon-4.png" alt="Страховой запас">
                     </div>
@@ -202,7 +204,7 @@
                 </div>
                 <!-- /.features-block -->
 
-                <div class="features-block">
+                <div class="features-block wow fadeInUp" data-wow-delay="0.5s">
                     <div class="features-block__img">
                         <img src="img/features/icon-5.png" alt="Флексопечать">
                     </div>
@@ -217,7 +219,7 @@
                 </div>
                 <!-- /.features-block -->
 
-                <div class="features-block">
+                <div class="features-block wow fadeInUp" data-wow-delay="0.6s">
                     <div class="features-block__img">
                         <img src="img/features/icon-6.png" alt="Гидрофобные добавки">
                     </div>
@@ -240,7 +242,7 @@
 
     <section class="products">
         <div class="container">
-            <h2 class="section-title">Наша продукция</h2>
+            <h2 class="section-title wow fadeInUp">Наша продукция</h2>
             <!-- /.section-title -->
             <div class="row">
                 <div class="col-6">
@@ -340,6 +342,9 @@
         });
     
     </script>
+ 
+    <script src="js/wow.min.js"></script>
+    <script>new WOW().init();</script>
     
 	
 </body>
