@@ -392,9 +392,12 @@ input:focus, button:focus {
 
 .products-block {
   text-align: center;
+  margin-bottom: 35px;
 }
 
 .products-block__img {
+  width: 380px;
+  height: 241px;
   margin-bottom: 19px;
 }
 
@@ -406,5 +409,33 @@ input:focus, button:focus {
 
 .products-block__button {
   margin-right: 12px;
+}
+
+.offer {
+  color: #ffffff;
+  background: url(../img/offer/offer-bg.jpg) center no-repeat;
+  padding: 64px 50px;
+}
+
+.offer-wrap {
+  width: 611px;
+  margin: 0 auto;
+}
+
+.offer-wrap input {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 12px;
+  text-align: center;
+  padding-left: 0;
+}
+
+.offer-wrap button {
+  display: block;
+  margin: 0 auto;
+}
+
+.offer-wrap label {
+  margin-bottom: 17px;
 }
 /*# sourceMappingURL=style.css.map */
